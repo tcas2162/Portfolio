@@ -92,6 +92,7 @@ p { font-size: 1.250em; line-height: 34px;}
 .banner_cnt2 { padding:0;}
 .copy_rights  {padding:0;text-align:center;}
 .copy_rights p {padding: 0 0 0 38px;font-size: 1.375em;line-height: 32px;background-size: 28px 28px;display: inline-block;margin: 0 0 20px 0;}
+.copy_rights p:before { font-size: 32px; line-height: 32px;}
 .footer_main { padding:50px 0 40px 0;}
 .sc_nt       { text-align:center;float: none !important;}
 .sc_nt ul    { float:none;}
@@ -132,7 +133,10 @@ p { font-size: 1.250em; line-height: 34px;}
 .stories1 h2 { margin:0;}
 .contact { padding:20px 0 50px 0;}
 .connect h2 { text-align:center;}
-.connect ul li a { padding:0 0 0 50px; font-size:1.600em;}
+.connect ul li a {  font-size:1.600em;}
+.connect ul { padding:0;}
+.connect ul li a span { margin:0 10px 0 0; width: 37px;}
+.connect ul li a span i { font-size:30px; line-height:30px;}
 .contact_in ul li { margin:0 0 20px 0;}
 .contact_in ul li textarea { padding:15px; height:300px; }
 .contact_in ul li .btn { margin:0 auto;}

@@ -63,7 +63,7 @@ body { color:#5f4a2b; font-family: 'Montserrat-Regular'; font-size:16px; line-he
   font-style: normal;
 }
 /* LayOut Start here */
-.wrapper									{ position:relative; padding:134px 0 0 0;}
+.wrapper									{ position:relative; padding:132px 0 0 0;}
 .sticky.About header { background:#fff1dd;}
 .sticky.Contact header { background:#fff1dd;}
 .sticky .banner_blk2	 { z-index:5;} 
@@ -149,7 +149,8 @@ nav ul li:hover a							{}
 .stories { padding:2px 0 0 0; text-align:center;}
 .stories figure { display:block; margin:0 0 40px 0;}
 .stories figure img{ display:block;}
-.read	 { display:block; font-size:1.375em; font-family: 'Montserrat-Bold'; text-decoration:underline; text-align:center;}
+.readall { text-align:center;}
+.read	 { font-size:1.375em; font-family: 'Montserrat-Bold';  text-align:center; display: inline-block; border-bottom: #5f4a2b 2px solid;}
 .stories1 h2  { padding:0 0 20px 0; margin:0 0 22px 0;} 
 .stories1 figure { margin:0 0 42px 0;}
 .flowchart {border-bottom:#5f4a2b 3px solid;padding: 39px 0 41px 0;}
@@ -288,7 +289,8 @@ nav ul li:hover a							{}
 .work ul li   { padding:0 12px;}
 .website  	  {padding:32px 0 10px 0;}
 .website p    {font-size:1.250em;line-height:22px;padding: 0 0 25px 0;}
-.website a    { display:block; font-size:1.563em; line-height:22px; text-decoration:underline;}
+.website a    { display:block; font-size:1.563em; line-height:22px; display:inline-block; border-bottom: #5f4a2b 2px solid;padding: 0 0 5px 0;}
+.website a:hover { border-bottom:none;}
 /* Inner3 content ends here */
 /* Inner4 content ends here */
 .Contact header { background:none;}
@@ -302,10 +304,9 @@ nav ul li:hover a							{}
 .connect h2  {font-weight:normal;text-align: left;letter-spacing: 0.6px;padding: 0 0 30px 0;}
 .connect ul  {display:inline-block;padding: 0 0 0 4px;}
 .connect ul li {display:block;margin: 0 0 17px 0;} 
-.connect ul li a {display:block;font-size:1.875em;line-height:40px;background:url(../images/sc1.png) no-repeat left center;padding: 0 0 0 57px;}
-.connect ul li a.sc2 { background:url(../images/sc2.png) no-repeat left center;} 
-.connect ul li a.sc3 { background:url(../images/sc3.png) no-repeat left center;} 
-.connect ul li a.sc4 { background:url(../images/sc4.png) no-repeat left center;} 
+.connect ul li a {display:inline-block;font-size:1.875em;line-height:40px;}
+.connect ul li a span { display:inline-block; vertical-align: middle; width:42px; margin:0 19px 0 0;}
+.connect ul li a span i { display:inline-block; font-size: 37px; line-height: 37px; color:#5f4a2b;}
 .contact_form {padding: 0 0 0 4px;text-align:center;}
 .contact_form h2 { font-weight:normal;}
 .contact_in ul { }
@@ -314,6 +315,7 @@ nav ul li:hover a							{}
 .contact_in ul li textarea {box-shadow: 1px 3px 5px 0 rgba(0, 0, 0, 0.2);outline:none;background:#fff;resize: none;height: 324px;padding:20px;font-size:1.250em;line-height:28px; color: #726044;text-align:center;border: none;border-radius: 0;
     line-height: calc(100 * 14.2%);
 	line-height:  -moz-calc(100 * 14.2%);
+
     line-height:  -webkit-calc(100 * 14.2%);
     line-height:  -o-calc(100 * 14.2%);
     line-height:  calc(100 * 14.2%);
@@ -336,13 +338,15 @@ nav ul li:hover a							{}
 /* Main content ends here */
 /* FOOTER HERE */
 footer				 	{ background:#ac8d5f;}
-.footer_main			{padding:83px 0 76px 0;}
+.footer_main			{padding: 88px 0 76px 0;}
 .copy_rights			{padding:0 0 0 2px;}
-.copy_rights p 			{  background: url(../images/copy.png) no-repeat left 1px; background-size: 34px 34px; color:#fff; padding: 3px 0 4px 62px; margin:0; font-size: 2.000em; line-height: 36px; letter-spacing: -0.4px; }
+.copy_rights p 			{ position:relative; color:#fff; padding: 3px 0 4px 62px; margin:0; font-size: 2.000em; line-height: 36px; letter-spacing: -0.4px; }
+.copy_rights p:before   { content: "\f1f9"; position:absolute; left:0; top:0; font-family:FontAwesome; font-size: 41px; line-height: 41px;}
 .sc_nt					{ padding:0;}
 .sc_nt ul				{ display:inline-block; margin:0; float:right;}
-.sc_nt ul li			{ display:inline-block; float:left; margin:0 0 0 21px;}
+.sc_nt ul li			{display:inline-block;float:left;margin: 0 0 0 24px;}
 .sc_nt ul li a		 	{ display:block;}
+.sc_nt ul li a i		 	{display:block;font-size: 37px;line-height: 37px;color:#fff;}
 .sc_nt ul li a img	 	{ display:block;}
  .errS {color: #f05d5c;font-size: 16px;line-height: 26px;display: block;}
  .f_success {color: #0f0;font-size: 16px;line-height: 20px;display: block;}
